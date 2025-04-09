@@ -1,5 +1,5 @@
 Flow report for mic1
-Wed Apr 02 08:15:24 2025
+Wed Apr 09 08:30:30 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,13 +40,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Apr 02 08:15:24 2025           ;
+; Flow Status                        ; Successful - Wed Apr 09 08:30:30 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mic1                                            ;
-; Top-level Entity Name              ; decoder_2x4                                     ;
+; Top-level Entity Name              ; full_adder_1bit                                 ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 4 / 4,608 ( < 1 % )                             ;
-;     Total combinational functions  ; 4 / 4,608 ( < 1 % )                             ;
+; Total logic elements               ; 2 / 4,608 ( < 1 % )                             ;
+;     Total combinational functions  ; 2 / 4,608 ( < 1 % )                             ;
 ;     Dedicated logic registers      ; 0 / 4,608 ( 0 % )                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 6 / 89 ( 7 % )                                  ;
@@ -64,24 +64,27 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/02/2025 08:07:43 ;
+; Start date & time ; 04/09/2025 08:30:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mic1                ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                ;
-+-------------------------------------+--------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+--------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 14071519365614.174359206328392 ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                       ; --            ; decoder_2x4 ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; decoder_2x4 ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; decoder_2x4 ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; decoder_2x4                    ; mic1          ; --          ; --         ;
-+-------------------------------------+--------------------------------+---------------+-------------+------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++-------------------------------------+--------------------------------+---------------+-----------------+----------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name     ; Section Id     ;
++-------------------------------------+--------------------------------+---------------+-----------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 14071519365614.174419821719624 ; --            ; --              ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --              ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --              ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --              ; --             ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; full_adder_1bit ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; full_adder_1bit ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; full_adder_1bit ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --              ; --             ;
+; TOP_LEVEL_ENTITY                    ; full_adder_1bit                ; mic1          ; --              ; --             ;
++-------------------------------------+--------------------------------+---------------+-----------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -89,14 +92,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4582 MB             ; 00:00:00                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 4796 MB             ; 00:00:01                           ;
-; Assembler                 ; 00:00:00     ; 1.0                     ; 4554 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4536 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4538 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4510 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4515 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4587 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:03     ; 1.0                     ; 4795 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4536 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4513 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,8 +110,6 @@ applicable agreement for further details.
 ; Fitter                    ; note-tutu        ; Windows 7 ; 6.2        ; x86_64         ;
 ; Assembler                 ; note-tutu        ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; note-tutu        ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; note-tutu        ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; note-tutu        ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; note-tutu        ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
@@ -122,9 +121,7 @@ quartus_map --read_settings_files=on --write_settings_files=off mic1 -c mic1
 quartus_fit --read_settings_files=off --write_settings_files=off mic1 -c mic1
 quartus_asm --read_settings_files=off --write_settings_files=off mic1 -c mic1
 quartus_sta mic1 -c mic1
-quartus_sta mic1 -c mic1
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mic1 -c mic1 --vector_source=C:/Users/Arthur/Documents/aoc/decoder_2x4.vwf --testbench_file=./simulation/qsim/mic1.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog mic1 -c mic1
+quartus_eda --read_settings_files=off --write_settings_files=off mic1 -c mic1
 
 
 
