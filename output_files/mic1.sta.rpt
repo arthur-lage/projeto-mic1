@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for mic1
-Wed Apr 09 08:30:29 2025
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Wed Apr 09 12:04:30 2025
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -126,14 +126,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; A          ; O           ; 9.098 ; 9.098 ; 9.098 ; 9.098 ;
-; A          ; cout        ; 9.236 ;       ;       ; 9.236 ;
-; B          ; O           ; 5.390 ; 5.390 ; 5.390 ; 5.390 ;
-; B          ; cout        ; 5.527 ;       ;       ; 5.527 ;
-; cin        ; O           ; 9.181 ; 9.181 ; 9.181 ; 9.181 ;
-; cin        ; cout        ; 9.320 ;       ;       ; 9.320 ;
-; ena        ; O           ; 5.353 ; 5.353 ; 5.353 ; 5.353 ;
-; ena        ; cout        ; 5.491 ;       ;       ; 5.491 ;
+; A          ; COUT        ; 8.893 ;       ;       ; 8.893 ;
+; A          ; O           ; 9.342 ; 9.342 ; 9.342 ; 9.342 ;
+; B          ; COUT        ; 4.904 ;       ;       ; 4.904 ;
+; B          ; O           ; 5.358 ; 5.358 ; 5.358 ; 5.358 ;
+; CIN        ; COUT        ; 9.178 ;       ;       ; 9.178 ;
+; CIN        ; O           ; 9.635 ; 9.635 ; 9.635 ; 9.635 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -142,14 +140,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; A          ; O           ; 9.098 ; 9.098 ; 9.098 ; 9.098 ;
-; A          ; cout        ; 9.236 ;       ;       ; 9.236 ;
-; B          ; O           ; 5.390 ; 5.390 ; 5.390 ; 5.390 ;
-; B          ; cout        ; 5.527 ;       ;       ; 5.527 ;
-; cin        ; O           ; 9.181 ; 9.181 ; 9.181 ; 9.181 ;
-; cin        ; cout        ; 9.320 ;       ;       ; 9.320 ;
-; ena        ; O           ; 5.353 ; 5.353 ; 5.353 ; 5.353 ;
-; ena        ; cout        ; 5.491 ;       ;       ; 5.491 ;
+; A          ; COUT        ; 8.893 ;       ;       ; 8.893 ;
+; A          ; O           ; 9.342 ; 9.342 ; 9.342 ; 9.342 ;
+; B          ; COUT        ; 4.904 ;       ;       ; 4.904 ;
+; B          ; O           ; 5.358 ; 5.358 ; 5.358 ; 5.358 ;
+; CIN        ; COUT        ; 9.178 ;       ;       ; 9.178 ;
+; CIN        ; O           ; 9.635 ; 9.635 ; 9.635 ; 9.635 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -188,14 +184,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; A          ; O           ; 5.099 ; 5.099 ; 5.099 ; 5.099 ;
-; A          ; cout        ; 5.164 ;       ;       ; 5.164 ;
-; B          ; O           ; 2.776 ; 2.776 ; 2.776 ; 2.776 ;
-; B          ; cout        ; 2.840 ;       ;       ; 2.840 ;
-; cin        ; O           ; 5.144 ; 5.144 ; 5.144 ; 5.144 ;
-; cin        ; cout        ; 5.209 ;       ;       ; 5.209 ;
-; ena        ; O           ; 2.761 ; 2.761 ; 2.761 ; 2.761 ;
-; ena        ; cout        ; 2.832 ;       ;       ; 2.832 ;
+; A          ; COUT        ; 5.027 ;       ;       ; 5.027 ;
+; A          ; O           ; 5.279 ; 5.279 ; 5.279 ; 5.279 ;
+; B          ; COUT        ; 2.560 ;       ;       ; 2.560 ;
+; B          ; O           ; 2.815 ; 2.815 ; 2.815 ; 2.815 ;
+; CIN        ; COUT        ; 5.145 ;       ;       ; 5.145 ;
+; CIN        ; O           ; 5.402 ; 5.402 ; 5.402 ; 5.402 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -204,14 +198,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; A          ; O           ; 5.099 ; 5.099 ; 5.099 ; 5.099 ;
-; A          ; cout        ; 5.164 ;       ;       ; 5.164 ;
-; B          ; O           ; 2.776 ; 2.776 ; 2.776 ; 2.776 ;
-; B          ; cout        ; 2.840 ;       ;       ; 2.840 ;
-; cin        ; O           ; 5.144 ; 5.144 ; 5.144 ; 5.144 ;
-; cin        ; cout        ; 5.209 ;       ;       ; 5.209 ;
-; ena        ; O           ; 2.761 ; 2.761 ; 2.761 ; 2.761 ;
-; ena        ; cout        ; 2.832 ;       ;       ; 2.832 ;
+; A          ; COUT        ; 5.027 ;       ;       ; 5.027 ;
+; A          ; O           ; 5.279 ; 5.279 ; 5.279 ; 5.279 ;
+; B          ; COUT        ; 2.560 ;       ;       ; 2.560 ;
+; B          ; O           ; 2.815 ; 2.815 ; 2.815 ; 2.815 ;
+; CIN        ; COUT        ; 5.145 ;       ;       ; 5.145 ;
+; CIN        ; O           ; 5.402 ; 5.402 ; 5.402 ; 5.402 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -230,14 +222,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; A          ; O           ; 9.098 ; 9.098 ; 9.098 ; 9.098 ;
-; A          ; cout        ; 9.236 ;       ;       ; 9.236 ;
-; B          ; O           ; 5.390 ; 5.390 ; 5.390 ; 5.390 ;
-; B          ; cout        ; 5.527 ;       ;       ; 5.527 ;
-; cin        ; O           ; 9.181 ; 9.181 ; 9.181 ; 9.181 ;
-; cin        ; cout        ; 9.320 ;       ;       ; 9.320 ;
-; ena        ; O           ; 5.353 ; 5.353 ; 5.353 ; 5.353 ;
-; ena        ; cout        ; 5.491 ;       ;       ; 5.491 ;
+; A          ; COUT        ; 8.893 ;       ;       ; 8.893 ;
+; A          ; O           ; 9.342 ; 9.342 ; 9.342 ; 9.342 ;
+; B          ; COUT        ; 4.904 ;       ;       ; 4.904 ;
+; B          ; O           ; 5.358 ; 5.358 ; 5.358 ; 5.358 ;
+; CIN        ; COUT        ; 9.178 ;       ;       ; 9.178 ;
+; CIN        ; O           ; 9.635 ; 9.635 ; 9.635 ; 9.635 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -246,14 +236,12 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; A          ; O           ; 5.099 ; 5.099 ; 5.099 ; 5.099 ;
-; A          ; cout        ; 5.164 ;       ;       ; 5.164 ;
-; B          ; O           ; 2.776 ; 2.776 ; 2.776 ; 2.776 ;
-; B          ; cout        ; 2.840 ;       ;       ; 2.840 ;
-; cin        ; O           ; 5.144 ; 5.144 ; 5.144 ; 5.144 ;
-; cin        ; cout        ; 5.209 ;       ;       ; 5.209 ;
-; ena        ; O           ; 2.761 ; 2.761 ; 2.761 ; 2.761 ;
-; ena        ; cout        ; 2.832 ;       ;       ; 2.832 ;
+; A          ; COUT        ; 5.027 ;       ;       ; 5.027 ;
+; A          ; O           ; 5.279 ; 5.279 ; 5.279 ; 5.279 ;
+; B          ; COUT        ; 2.560 ;       ;       ; 2.560 ;
+; B          ; O           ; 2.815 ; 2.815 ; 2.815 ; 2.815 ;
+; CIN        ; COUT        ; 5.145 ;       ;       ; 5.145 ;
+; CIN        ; O           ; 5.402 ; 5.402 ; 5.402 ; 5.402 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -282,10 +270,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 4     ; 4    ;
-; Unconstrained Input Port Paths  ; 8     ; 8    ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 6     ; 6    ;
 ; Unconstrained Output Ports      ; 2     ; 2    ;
-; Unconstrained Output Port Paths ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 6     ; 6    ;
 +---------------------------------+-------+------+
 
 
@@ -293,9 +281,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; TimeQuest Timing Analyzer Messages ;
 +------------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Apr 09 08:30:28 2025
+    Info: Processing started: Wed Apr 09 12:04:29 2025
 Info: Command: quartus_sta mic1 -c mic1
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -325,9 +313,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4536 megabytes
-    Info: Processing ended: Wed Apr 09 08:30:29 2025
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 318 megabytes
+    Info: Processing ended: Wed Apr 09 12:04:30 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -79,11 +79,12 @@ Z28 !s100 [VM;eKK[nHzc53Ref7CXK3
 !i10b 1
 !s85 0
 !s101 -O0
-vfull_adder_1bit
-Z29 I`HZhXdN1lLg5dia3288_a0
-Z30 VLLBhVgkLiTkUdAenzlI8X1
-R3
-Z31 w1744197978
+vFULL_ADDER_1bit
+Z29 !s100 @G?OlECHh>9SU<Vhm_<@53
+Z30 Im4BCBeFUDV[:EPLX6oKWX1
+Z31 VZS<JmR9<;8V5O[c6faEkA3
+Z32 dC:\Users\Rafael\OneDrive\Documentos\CEFET\LAOCII\simulation\qsim
+Z33 w1744197751
 R5
 R6
 L0 31
@@ -92,38 +93,39 @@ r1
 31
 R12
 R8
+Z34 n@f@u@l@l_@a@d@d@e@r_1bit
 !i10b 1
-Z32 !s100 L_o[Bm:zGM]_59]e;e2nV1
 !s85 0
-Z33 !s108 1744197981.769000
+Z35 !s108 1744197752.333000
 R11
 !s101 -O0
-vfull_adder_1bit_vlg_check_tst
+vFULL_ADDER_1bit_vlg_check_tst
 !i10b 1
-!s100 olJSPiNNe?4]JOCe7Z3VU1
-I75`hD:IFCkJlGRd;mN]4o3
-VeA];9Q_lQUnO4z?JhUccd1
-R3
-Z34 w1744197977
+Z36 !s100 k;N`JKhzOY8<Qn`i`]:Y02
+Z37 IbYRTPeH]:HHJIcf;<dJAK1
+Z38 VVeV=066]>CSOI8HC;Dn9j1
+R32
+Z39 w1744197750
 R16
 R17
-L0 63
+L0 61
 R7
 r1
 !s85 0
 31
-Z35 !s108 1744197981.937000
-Z36 !s107 mic1.vt|
+Z40 !s108 1744197752.487000
+Z41 !s107 mic1.vt|
 R20
 !s101 -O0
 R8
-vfull_adder_1bit_vlg_sample_tst
+Z42 n@f@u@l@l_@a@d@d@e@r_1bit_vlg_check_tst
+vFULL_ADDER_1bit_vlg_sample_tst
 !i10b 1
-!s100 TFiZ;X>2d1`4AU>Mz;>ch2
-I_U?2AXc6H]YH2<l3Z3?aU1
-V9:kibhg<66h_jXO]2J[UN2
-R3
-R34
+Z43 !s100 9hQo2MZ?SLCI=Y3=YLLSX0
+Z44 IGbD=9:[j`XQecLo9^CO563
+Z45 VbV;zDOEAd]az^S::cbB]O0
+R32
+R39
 R16
 R17
 L0 29
@@ -131,27 +133,29 @@ R7
 r1
 !s85 0
 31
-R35
-R36
+R40
+R41
 R20
 !s101 -O0
 R8
-vfull_adder_1bit_vlg_vec_tst
+Z46 n@f@u@l@l_@a@d@d@e@r_1bit_vlg_sample_tst
+vFULL_ADDER_1bit_vlg_vec_tst
 !i10b 1
-!s100 0E1jzUP=H2NB6zmEA<GfI3
-IIhzR3cHoY^PV0LJN_K7570
-VCf1z?jM=S^QA`_4I=EB_F2
-R3
-R34
+Z47 !s100 ;oCKJnRhUHgd8eQlSG64J2
+Z48 I<<TIzQ8U_4Ynge@Afhjnb3
+Z49 VoeB308GaVJ[A[;LBd?1zN1
+R32
+R39
 R16
 R17
-L0 185
+Z50 L0 183
 R7
 r1
 !s85 0
 31
-R35
-R36
+R40
+R41
 R20
 !s101 -O0
 R8
+Z51 n@f@u@l@l_@a@d@d@e@r_1bit_vlg_vec_tst
