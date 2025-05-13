@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 112 112)
+	(rect 16 16 128 144)
 	(text "FULL_ADDER_1bit" (rect 5 0 110 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -45,20 +45,27 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 96 32)
-		(output)
-		(text "O" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "O" (rect 66 27 75 41)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
+		(pt 0 80)
+		(input)
+		(text "ENE" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "ENE" (rect 21 75 43 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 96 48)
+		(pt 112 32)
+		(output)
+		(text "O" (rect 0 0 9 14)(font "Arial" (font_size 8)))
+		(text "O" (rect 82 27 91 41)(font "Arial" (font_size 8)))
+		(line (pt 112 32)(pt 96 32))
+	)
+	(port
+		(pt 112 48)
 		(output)
 		(text "COUT" (rect 0 0 33 14)(font "Arial" (font_size 8)))
-		(text "COUT" (rect 42 43 75 57)(font "Arial" (font_size 8)))
-		(line (pt 96 48)(pt 80 48))
+		(text "COUT" (rect 58 43 91 57)(font "Arial" (font_size 8)))
+		(line (pt 112 48)(pt 96 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 80))
+		(rectangle (rect 16 16 96 112))
 	)
 )
