@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mic1
-Mon May 26 09:49:43 2025
+Mon May 26 10:20:28 2025
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 26 09:49:43 2025           ;
+; Analysis & Synthesis Status        ; Successful - Mon May 26 10:20:28 2025           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mic1                                            ;
-; Top-level Entity Name              ; register_8bits                                  ;
+; Top-level Entity Name              ; register_32bits                                 ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 24                                              ;
-;     Total combinational functions  ; 24                                              ;
-;     Dedicated logic registers      ; 8                                               ;
-; Total registers                    ; 8                                               ;
-; Total pins                         ; 26                                              ;
+; Total logic elements               ; 96                                              ;
+;     Total combinational functions  ; 96                                              ;
+;     Dedicated logic registers      ; 32                                              ;
+; Total registers                    ; 32                                              ;
+; Total pins                         ; 98                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; register_8bits     ; mic1               ;
+; Top-level entity name                                                      ; register_32bits    ; mic1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -153,14 +153,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
-; register_1bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/register_1bit.bdf  ;         ;
-; register_8bits.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/register_8bits.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
+; register_1bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/register_1bit.bdf   ;         ;
+; register_8bits.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/register_8bits.bdf  ;         ;
+; register_32bits.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/register_32bits.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -168,46 +169,74 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 24    ;
+; Estimated Total logic elements              ; 96    ;
 ;                                             ;       ;
-; Total combinational functions               ; 24    ;
+; Total combinational functions               ; 96    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 8     ;
-;     -- 3 input functions                    ; 8     ;
-;     -- <=2 input functions                  ; 8     ;
+;     -- 4 input functions                    ; 32    ;
+;     -- 3 input functions                    ; 32    ;
+;     -- <=2 input functions                  ; 32    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 24    ;
+;     -- normal mode                          ; 96    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 8     ;
-;     -- Dedicated logic registers            ; 8     ;
+; Total registers                             ; 32    ;
+;     -- Dedicated logic registers            ; 32    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 26    ;
+; I/O pins                                    ; 98    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; LOAD  ;
-; Maximum fan-out                             ; 24    ;
-; Total fan-out                               ; 104   ;
-; Average fan-out                             ; 1.79  ;
+; Maximum fan-out                             ; 96    ;
+; Total fan-out                               ; 416   ;
+; Average fan-out                             ; 1.84  ;
 +---------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
-; |register_8bits            ; 24 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |register_8bits                    ; work         ;
-;    |register_1bit:REG0|    ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_8bits|register_1bit:REG0 ; work         ;
-;    |register_1bit:REG1|    ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_8bits|register_1bit:REG1 ; work         ;
-;    |register_1bit:REG2|    ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_8bits|register_1bit:REG2 ; work         ;
-;    |register_1bit:REG3|    ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_8bits|register_1bit:REG3 ; work         ;
-;    |register_1bit:REG4|    ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_8bits|register_1bit:REG4 ; work         ;
-;    |register_1bit:REG5|    ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_8bits|register_1bit:REG5 ; work         ;
-;    |register_1bit:REG6|    ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_8bits|register_1bit:REG6 ; work         ;
-;    |register_1bit:REG7|    ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_8bits|register_1bit:REG7 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; |register_32bits           ; 96 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 98   ; 0            ; |register_32bits                                         ; work         ;
+;    |register_8bits:inst1|  ; 24 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst1                    ; work         ;
+;       |register_1bit:REG0| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst1|register_1bit:REG0 ; work         ;
+;       |register_1bit:REG1| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst1|register_1bit:REG1 ; work         ;
+;       |register_1bit:REG2| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst1|register_1bit:REG2 ; work         ;
+;       |register_1bit:REG3| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst1|register_1bit:REG3 ; work         ;
+;       |register_1bit:REG4| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst1|register_1bit:REG4 ; work         ;
+;       |register_1bit:REG5| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst1|register_1bit:REG5 ; work         ;
+;       |register_1bit:REG6| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst1|register_1bit:REG6 ; work         ;
+;       |register_1bit:REG7| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst1|register_1bit:REG7 ; work         ;
+;    |register_8bits:inst2|  ; 24 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst2                    ; work         ;
+;       |register_1bit:REG0| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst2|register_1bit:REG0 ; work         ;
+;       |register_1bit:REG1| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst2|register_1bit:REG1 ; work         ;
+;       |register_1bit:REG2| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst2|register_1bit:REG2 ; work         ;
+;       |register_1bit:REG3| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst2|register_1bit:REG3 ; work         ;
+;       |register_1bit:REG4| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst2|register_1bit:REG4 ; work         ;
+;       |register_1bit:REG5| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst2|register_1bit:REG5 ; work         ;
+;       |register_1bit:REG6| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst2|register_1bit:REG6 ; work         ;
+;       |register_1bit:REG7| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst2|register_1bit:REG7 ; work         ;
+;    |register_8bits:inst3|  ; 24 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst3                    ; work         ;
+;       |register_1bit:REG0| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst3|register_1bit:REG0 ; work         ;
+;       |register_1bit:REG1| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst3|register_1bit:REG1 ; work         ;
+;       |register_1bit:REG2| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst3|register_1bit:REG2 ; work         ;
+;       |register_1bit:REG3| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst3|register_1bit:REG3 ; work         ;
+;       |register_1bit:REG4| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst3|register_1bit:REG4 ; work         ;
+;       |register_1bit:REG5| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst3|register_1bit:REG5 ; work         ;
+;       |register_1bit:REG6| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst3|register_1bit:REG6 ; work         ;
+;       |register_1bit:REG7| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst3|register_1bit:REG7 ; work         ;
+;    |register_8bits:inst|   ; 24 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst                     ; work         ;
+;       |register_1bit:REG0| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst|register_1bit:REG0  ; work         ;
+;       |register_1bit:REG1| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst|register_1bit:REG1  ; work         ;
+;       |register_1bit:REG2| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst|register_1bit:REG2  ; work         ;
+;       |register_1bit:REG3| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst|register_1bit:REG3  ; work         ;
+;       |register_1bit:REG4| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst|register_1bit:REG4  ; work         ;
+;       |register_1bit:REG5| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst|register_1bit:REG5  ; work         ;
+;       |register_1bit:REG6| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst|register_1bit:REG6  ; work         ;
+;       |register_1bit:REG7| ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_32bits|register_8bits:inst|register_1bit:REG7  ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -216,10 +245,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 32    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -241,15 +270,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon May 26 09:49:42 2025
+    Info: Processing started: Mon May 26 10:20:26 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mic1 -c mic1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file decoder_2x4.bdf
     Info (12023): Found entity 1: decoder_2x4
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder_1bit.bdf
-    Info (12023): Found entity 1: FULL_ADDER_1bit
+    Info (12023): Found entity 1: full_adder_1bit
 Info (12021): Found 1 design units, including 1 entities, in source file ula_1bit.bdf
-    Info (12023): Found entity 1: ULA_1bit
+    Info (12023): Found entity 1: ula_1bit
 Info (12021): Found 1 design units, including 1 entities, in source file ula_8bits.bdf
     Info (12023): Found entity 1: ULA_8bits
 Info (12021): Found 1 design units, including 1 entities, in source file register_1bit.bdf
@@ -258,27 +287,54 @@ Info (12021): Found 1 design units, including 1 entities, in source file registe
     Info (12023): Found entity 1: register_8bits
 Info (12021): Found 1 design units, including 1 entities, in source file ula_32bits.bdf
     Info (12023): Found entity 1: ULA_32bits
-Info (12127): Elaborating entity "register_8bits" for the top level hierarchy
-Info (12128): Elaborating entity "register_1bit" for hierarchy "register_1bit:REG2"
+Info (12021): Found 1 design units, including 1 entities, in source file register_32bits.bdf
+    Info (12023): Found entity 1: register_32bits
+Info (12127): Elaborating entity "register_32bits" for the top level hierarchy
+Info (12128): Elaborating entity "register_8bits" for hierarchy "register_8bits:inst"
+Info (12128): Elaborating entity "register_1bit" for hierarchy "register_8bits:inst|register_1bit:REG2"
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "register_1bit:REG7|dff" is converted into an equivalent circuit using register "register_1bit:REG7|dff~_emulated" and latch "register_1bit:REG7|dff~1"
-    Warning (13310): Register "register_1bit:REG6|dff" is converted into an equivalent circuit using register "register_1bit:REG6|dff~_emulated" and latch "register_1bit:REG6|dff~1"
-    Warning (13310): Register "register_1bit:REG5|dff" is converted into an equivalent circuit using register "register_1bit:REG5|dff~_emulated" and latch "register_1bit:REG5|dff~1"
-    Warning (13310): Register "register_1bit:REG4|dff" is converted into an equivalent circuit using register "register_1bit:REG4|dff~_emulated" and latch "register_1bit:REG4|dff~1"
-    Warning (13310): Register "register_1bit:REG3|dff" is converted into an equivalent circuit using register "register_1bit:REG3|dff~_emulated" and latch "register_1bit:REG3|dff~1"
-    Warning (13310): Register "register_1bit:REG2|dff" is converted into an equivalent circuit using register "register_1bit:REG2|dff~_emulated" and latch "register_1bit:REG2|dff~1"
-    Warning (13310): Register "register_1bit:REG1|dff" is converted into an equivalent circuit using register "register_1bit:REG1|dff~_emulated" and latch "register_1bit:REG1|dff~1"
-    Warning (13310): Register "register_1bit:REG0|dff" is converted into an equivalent circuit using register "register_1bit:REG0|dff~_emulated" and latch "register_1bit:REG0|dff~1"
+    Warning (13310): Register "register_8bits:inst3|register_1bit:REG7|dff" is converted into an equivalent circuit using register "register_8bits:inst3|register_1bit:REG7|dff~_emulated" and latch "register_8bits:inst3|register_1bit:REG7|dff~1"
+    Warning (13310): Register "register_8bits:inst3|register_1bit:REG6|dff" is converted into an equivalent circuit using register "register_8bits:inst3|register_1bit:REG6|dff~_emulated" and latch "register_8bits:inst3|register_1bit:REG6|dff~1"
+    Warning (13310): Register "register_8bits:inst3|register_1bit:REG5|dff" is converted into an equivalent circuit using register "register_8bits:inst3|register_1bit:REG5|dff~_emulated" and latch "register_8bits:inst3|register_1bit:REG5|dff~1"
+    Warning (13310): Register "register_8bits:inst3|register_1bit:REG4|dff" is converted into an equivalent circuit using register "register_8bits:inst3|register_1bit:REG4|dff~_emulated" and latch "register_8bits:inst3|register_1bit:REG4|dff~1"
+    Warning (13310): Register "register_8bits:inst3|register_1bit:REG3|dff" is converted into an equivalent circuit using register "register_8bits:inst3|register_1bit:REG3|dff~_emulated" and latch "register_8bits:inst3|register_1bit:REG3|dff~1"
+    Warning (13310): Register "register_8bits:inst3|register_1bit:REG2|dff" is converted into an equivalent circuit using register "register_8bits:inst3|register_1bit:REG2|dff~_emulated" and latch "register_8bits:inst3|register_1bit:REG2|dff~1"
+    Warning (13310): Register "register_8bits:inst3|register_1bit:REG1|dff" is converted into an equivalent circuit using register "register_8bits:inst3|register_1bit:REG1|dff~_emulated" and latch "register_8bits:inst3|register_1bit:REG1|dff~1"
+    Warning (13310): Register "register_8bits:inst3|register_1bit:REG0|dff" is converted into an equivalent circuit using register "register_8bits:inst3|register_1bit:REG0|dff~_emulated" and latch "register_8bits:inst3|register_1bit:REG0|dff~1"
+    Warning (13310): Register "register_8bits:inst2|register_1bit:REG7|dff" is converted into an equivalent circuit using register "register_8bits:inst2|register_1bit:REG7|dff~_emulated" and latch "register_8bits:inst2|register_1bit:REG7|dff~1"
+    Warning (13310): Register "register_8bits:inst2|register_1bit:REG6|dff" is converted into an equivalent circuit using register "register_8bits:inst2|register_1bit:REG6|dff~_emulated" and latch "register_8bits:inst2|register_1bit:REG6|dff~1"
+    Warning (13310): Register "register_8bits:inst2|register_1bit:REG5|dff" is converted into an equivalent circuit using register "register_8bits:inst2|register_1bit:REG5|dff~_emulated" and latch "register_8bits:inst2|register_1bit:REG5|dff~1"
+    Warning (13310): Register "register_8bits:inst2|register_1bit:REG4|dff" is converted into an equivalent circuit using register "register_8bits:inst2|register_1bit:REG4|dff~_emulated" and latch "register_8bits:inst2|register_1bit:REG4|dff~1"
+    Warning (13310): Register "register_8bits:inst2|register_1bit:REG3|dff" is converted into an equivalent circuit using register "register_8bits:inst2|register_1bit:REG3|dff~_emulated" and latch "register_8bits:inst2|register_1bit:REG3|dff~1"
+    Warning (13310): Register "register_8bits:inst2|register_1bit:REG2|dff" is converted into an equivalent circuit using register "register_8bits:inst2|register_1bit:REG2|dff~_emulated" and latch "register_8bits:inst2|register_1bit:REG2|dff~1"
+    Warning (13310): Register "register_8bits:inst2|register_1bit:REG1|dff" is converted into an equivalent circuit using register "register_8bits:inst2|register_1bit:REG1|dff~_emulated" and latch "register_8bits:inst2|register_1bit:REG1|dff~1"
+    Warning (13310): Register "register_8bits:inst2|register_1bit:REG0|dff" is converted into an equivalent circuit using register "register_8bits:inst2|register_1bit:REG0|dff~_emulated" and latch "register_8bits:inst2|register_1bit:REG0|dff~1"
+    Warning (13310): Register "register_8bits:inst1|register_1bit:REG7|dff" is converted into an equivalent circuit using register "register_8bits:inst1|register_1bit:REG7|dff~_emulated" and latch "register_8bits:inst1|register_1bit:REG7|dff~1"
+    Warning (13310): Register "register_8bits:inst1|register_1bit:REG6|dff" is converted into an equivalent circuit using register "register_8bits:inst1|register_1bit:REG6|dff~_emulated" and latch "register_8bits:inst1|register_1bit:REG6|dff~1"
+    Warning (13310): Register "register_8bits:inst1|register_1bit:REG5|dff" is converted into an equivalent circuit using register "register_8bits:inst1|register_1bit:REG5|dff~_emulated" and latch "register_8bits:inst1|register_1bit:REG5|dff~1"
+    Warning (13310): Register "register_8bits:inst1|register_1bit:REG4|dff" is converted into an equivalent circuit using register "register_8bits:inst1|register_1bit:REG4|dff~_emulated" and latch "register_8bits:inst1|register_1bit:REG4|dff~1"
+    Warning (13310): Register "register_8bits:inst1|register_1bit:REG3|dff" is converted into an equivalent circuit using register "register_8bits:inst1|register_1bit:REG3|dff~_emulated" and latch "register_8bits:inst1|register_1bit:REG3|dff~1"
+    Warning (13310): Register "register_8bits:inst1|register_1bit:REG2|dff" is converted into an equivalent circuit using register "register_8bits:inst1|register_1bit:REG2|dff~_emulated" and latch "register_8bits:inst1|register_1bit:REG2|dff~1"
+    Warning (13310): Register "register_8bits:inst1|register_1bit:REG1|dff" is converted into an equivalent circuit using register "register_8bits:inst1|register_1bit:REG1|dff~_emulated" and latch "register_8bits:inst1|register_1bit:REG1|dff~1"
+    Warning (13310): Register "register_8bits:inst1|register_1bit:REG0|dff" is converted into an equivalent circuit using register "register_8bits:inst1|register_1bit:REG0|dff~_emulated" and latch "register_8bits:inst1|register_1bit:REG0|dff~1"
+    Warning (13310): Register "register_8bits:inst|register_1bit:REG7|dff" is converted into an equivalent circuit using register "register_8bits:inst|register_1bit:REG7|dff~_emulated" and latch "register_8bits:inst|register_1bit:REG7|dff~1"
+    Warning (13310): Register "register_8bits:inst|register_1bit:REG6|dff" is converted into an equivalent circuit using register "register_8bits:inst|register_1bit:REG6|dff~_emulated" and latch "register_8bits:inst|register_1bit:REG6|dff~1"
+    Warning (13310): Register "register_8bits:inst|register_1bit:REG5|dff" is converted into an equivalent circuit using register "register_8bits:inst|register_1bit:REG5|dff~_emulated" and latch "register_8bits:inst|register_1bit:REG5|dff~1"
+    Warning (13310): Register "register_8bits:inst|register_1bit:REG4|dff" is converted into an equivalent circuit using register "register_8bits:inst|register_1bit:REG4|dff~_emulated" and latch "register_8bits:inst|register_1bit:REG4|dff~1"
+    Warning (13310): Register "register_8bits:inst|register_1bit:REG3|dff" is converted into an equivalent circuit using register "register_8bits:inst|register_1bit:REG3|dff~_emulated" and latch "register_8bits:inst|register_1bit:REG3|dff~1"
+    Warning (13310): Register "register_8bits:inst|register_1bit:REG2|dff" is converted into an equivalent circuit using register "register_8bits:inst|register_1bit:REG2|dff~_emulated" and latch "register_8bits:inst|register_1bit:REG2|dff~1"
+    Warning (13310): Register "register_8bits:inst|register_1bit:REG1|dff" is converted into an equivalent circuit using register "register_8bits:inst|register_1bit:REG1|dff~_emulated" and latch "register_8bits:inst|register_1bit:REG1|dff~1"
+    Warning (13310): Register "register_8bits:inst|register_1bit:REG0|dff" is converted into an equivalent circuit using register "register_8bits:inst|register_1bit:REG0|dff~_emulated" and latch "register_8bits:inst|register_1bit:REG0|dff~1"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 18 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 24 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 372 megabytes
-    Info: Processing ended: Mon May 26 09:49:43 2025
-    Info: Elapsed time: 00:00:01
+Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 96 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 380 megabytes
+    Info: Processing ended: Mon May 26 10:20:28 2025
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

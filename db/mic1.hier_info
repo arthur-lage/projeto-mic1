@@ -1,4 +1,111 @@
-|register_8bits
+|register_32bits
+Q[0] <= register_8bits:inst.Q[0]
+Q[1] <= register_8bits:inst.Q[1]
+Q[2] <= register_8bits:inst.Q[2]
+Q[3] <= register_8bits:inst.Q[3]
+Q[4] <= register_8bits:inst.Q[4]
+Q[5] <= register_8bits:inst.Q[5]
+Q[6] <= register_8bits:inst.Q[6]
+Q[7] <= register_8bits:inst.Q[7]
+Q[8] <= register_8bits:inst1.Q[0]
+Q[9] <= register_8bits:inst1.Q[1]
+Q[10] <= register_8bits:inst1.Q[2]
+Q[11] <= register_8bits:inst1.Q[3]
+Q[12] <= register_8bits:inst1.Q[4]
+Q[13] <= register_8bits:inst1.Q[5]
+Q[14] <= register_8bits:inst1.Q[6]
+Q[15] <= register_8bits:inst1.Q[7]
+Q[16] <= register_8bits:inst2.Q[0]
+Q[17] <= register_8bits:inst2.Q[1]
+Q[18] <= register_8bits:inst2.Q[2]
+Q[19] <= register_8bits:inst2.Q[3]
+Q[20] <= register_8bits:inst2.Q[4]
+Q[21] <= register_8bits:inst2.Q[5]
+Q[22] <= register_8bits:inst2.Q[6]
+Q[23] <= register_8bits:inst2.Q[7]
+Q[24] <= register_8bits:inst3.Q[0]
+Q[25] <= register_8bits:inst3.Q[1]
+Q[26] <= register_8bits:inst3.Q[2]
+Q[27] <= register_8bits:inst3.Q[3]
+Q[28] <= register_8bits:inst3.Q[4]
+Q[29] <= register_8bits:inst3.Q[5]
+Q[30] <= register_8bits:inst3.Q[6]
+Q[31] <= register_8bits:inst3.Q[7]
+LOAD => register_8bits:inst.LOAD
+LOAD => register_8bits:inst1.LOAD
+LOAD => register_8bits:inst2.LOAD
+LOAD => register_8bits:inst3.LOAD
+CLOCK => register_8bits:inst.CLOCK
+CLOCK => register_8bits:inst1.CLOCK
+CLOCK => register_8bits:inst2.CLOCK
+CLOCK => register_8bits:inst3.CLOCK
+DATA[0] => register_8bits:inst.DATA[0]
+DATA[1] => register_8bits:inst.DATA[1]
+DATA[2] => register_8bits:inst.DATA[2]
+DATA[3] => register_8bits:inst.DATA[3]
+DATA[4] => register_8bits:inst.DATA[4]
+DATA[5] => register_8bits:inst.DATA[5]
+DATA[6] => register_8bits:inst.DATA[6]
+DATA[7] => register_8bits:inst.DATA[7]
+DATA[8] => register_8bits:inst1.DATA[0]
+DATA[9] => register_8bits:inst1.DATA[1]
+DATA[10] => register_8bits:inst1.DATA[2]
+DATA[11] => register_8bits:inst1.DATA[3]
+DATA[12] => register_8bits:inst1.DATA[4]
+DATA[13] => register_8bits:inst1.DATA[5]
+DATA[14] => register_8bits:inst1.DATA[6]
+DATA[15] => register_8bits:inst1.DATA[7]
+DATA[16] => register_8bits:inst2.DATA[0]
+DATA[17] => register_8bits:inst2.DATA[1]
+DATA[18] => register_8bits:inst2.DATA[2]
+DATA[19] => register_8bits:inst2.DATA[3]
+DATA[20] => register_8bits:inst2.DATA[4]
+DATA[21] => register_8bits:inst2.DATA[5]
+DATA[22] => register_8bits:inst2.DATA[6]
+DATA[23] => register_8bits:inst2.DATA[7]
+DATA[24] => register_8bits:inst3.DATA[0]
+DATA[25] => register_8bits:inst3.DATA[1]
+DATA[26] => register_8bits:inst3.DATA[2]
+DATA[27] => register_8bits:inst3.DATA[3]
+DATA[28] => register_8bits:inst3.DATA[4]
+DATA[29] => register_8bits:inst3.DATA[5]
+DATA[30] => register_8bits:inst3.DATA[6]
+DATA[31] => register_8bits:inst3.DATA[7]
+PARALLEL[0] => register_8bits:inst.PARALLEL[0]
+PARALLEL[1] => register_8bits:inst.PARALLEL[1]
+PARALLEL[2] => register_8bits:inst.PARALLEL[2]
+PARALLEL[3] => register_8bits:inst.PARALLEL[3]
+PARALLEL[4] => register_8bits:inst.PARALLEL[4]
+PARALLEL[5] => register_8bits:inst.PARALLEL[5]
+PARALLEL[6] => register_8bits:inst.PARALLEL[6]
+PARALLEL[7] => register_8bits:inst.PARALLEL[7]
+PARALLEL[8] => register_8bits:inst1.PARALLEL[0]
+PARALLEL[9] => register_8bits:inst1.PARALLEL[1]
+PARALLEL[10] => register_8bits:inst1.PARALLEL[2]
+PARALLEL[11] => register_8bits:inst1.PARALLEL[3]
+PARALLEL[12] => register_8bits:inst1.PARALLEL[4]
+PARALLEL[13] => register_8bits:inst1.PARALLEL[5]
+PARALLEL[14] => register_8bits:inst1.PARALLEL[6]
+PARALLEL[15] => register_8bits:inst1.PARALLEL[7]
+PARALLEL[16] => register_8bits:inst2.PARALLEL[0]
+PARALLEL[17] => register_8bits:inst2.PARALLEL[1]
+PARALLEL[18] => register_8bits:inst2.PARALLEL[2]
+PARALLEL[19] => register_8bits:inst2.PARALLEL[3]
+PARALLEL[20] => register_8bits:inst2.PARALLEL[4]
+PARALLEL[21] => register_8bits:inst2.PARALLEL[5]
+PARALLEL[22] => register_8bits:inst2.PARALLEL[6]
+PARALLEL[23] => register_8bits:inst2.PARALLEL[7]
+PARALLEL[24] => register_8bits:inst3.PARALLEL[0]
+PARALLEL[25] => register_8bits:inst3.PARALLEL[1]
+PARALLEL[26] => register_8bits:inst3.PARALLEL[2]
+PARALLEL[27] => register_8bits:inst3.PARALLEL[3]
+PARALLEL[28] => register_8bits:inst3.PARALLEL[4]
+PARALLEL[29] => register_8bits:inst3.PARALLEL[5]
+PARALLEL[30] => register_8bits:inst3.PARALLEL[6]
+PARALLEL[31] => register_8bits:inst3.PARALLEL[7]
+
+
+|register_32bits|register_8bits:inst
 Q[0] <= register_1bit:REG0.Q
 Q[1] <= register_1bit:REG1.Q
 Q[2] <= register_1bit:REG2.Q
@@ -41,7 +148,7 @@ CLOCK => register_1bit:REG6.Clock
 CLOCK => register_1bit:REG7.Clock
 
 
-|register_8bits|register_1bit:REG2
+|register_32bits|register_8bits:inst|register_1bit:REG2
 Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
 Load => NAND.IN0
 Load => NAN2.IN0
@@ -51,7 +158,7 @@ Clock => dff.CLK
 Data => dff.DATAIN
 
 
-|register_8bits|register_1bit:REG1
+|register_32bits|register_8bits:inst|register_1bit:REG1
 Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
 Load => NAND.IN0
 Load => NAN2.IN0
@@ -61,7 +168,7 @@ Clock => dff.CLK
 Data => dff.DATAIN
 
 
-|register_8bits|register_1bit:REG0
+|register_32bits|register_8bits:inst|register_1bit:REG0
 Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
 Load => NAND.IN0
 Load => NAN2.IN0
@@ -71,7 +178,7 @@ Clock => dff.CLK
 Data => dff.DATAIN
 
 
-|register_8bits|register_1bit:REG3
+|register_32bits|register_8bits:inst|register_1bit:REG3
 Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
 Load => NAND.IN0
 Load => NAN2.IN0
@@ -81,7 +188,7 @@ Clock => dff.CLK
 Data => dff.DATAIN
 
 
-|register_8bits|register_1bit:REG4
+|register_32bits|register_8bits:inst|register_1bit:REG4
 Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
 Load => NAND.IN0
 Load => NAN2.IN0
@@ -91,7 +198,7 @@ Clock => dff.CLK
 Data => dff.DATAIN
 
 
-|register_8bits|register_1bit:REG5
+|register_32bits|register_8bits:inst|register_1bit:REG5
 Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
 Load => NAND.IN0
 Load => NAN2.IN0
@@ -101,7 +208,7 @@ Clock => dff.CLK
 Data => dff.DATAIN
 
 
-|register_8bits|register_1bit:REG6
+|register_32bits|register_8bits:inst|register_1bit:REG6
 Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
 Load => NAND.IN0
 Load => NAN2.IN0
@@ -111,7 +218,376 @@ Clock => dff.CLK
 Data => dff.DATAIN
 
 
-|register_8bits|register_1bit:REG7
+|register_32bits|register_8bits:inst|register_1bit:REG7
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst1
+Q[0] <= register_1bit:REG0.Q
+Q[1] <= register_1bit:REG1.Q
+Q[2] <= register_1bit:REG2.Q
+Q[3] <= register_1bit:REG3.Q
+Q[4] <= register_1bit:REG4.Q
+Q[5] <= register_1bit:REG5.Q
+Q[6] <= register_1bit:REG6.Q
+Q[7] <= register_1bit:REG7.Q
+PARALLEL[0] => register_1bit:REG0.Parallel
+PARALLEL[1] => register_1bit:REG1.Parallel
+PARALLEL[2] => register_1bit:REG2.Parallel
+PARALLEL[3] => register_1bit:REG3.Parallel
+PARALLEL[4] => register_1bit:REG4.Parallel
+PARALLEL[5] => register_1bit:REG5.Parallel
+PARALLEL[6] => register_1bit:REG6.Parallel
+PARALLEL[7] => register_1bit:REG7.Parallel
+LOAD => register_1bit:REG2.Load
+LOAD => register_1bit:REG1.Load
+LOAD => register_1bit:REG0.Load
+LOAD => register_1bit:REG3.Load
+LOAD => register_1bit:REG4.Load
+LOAD => register_1bit:REG5.Load
+LOAD => register_1bit:REG6.Load
+LOAD => register_1bit:REG7.Load
+DATA[0] => register_1bit:REG0.Data
+DATA[1] => register_1bit:REG1.Data
+DATA[2] => register_1bit:REG2.Data
+DATA[3] => register_1bit:REG3.Data
+DATA[4] => register_1bit:REG4.Data
+DATA[5] => register_1bit:REG5.Data
+DATA[6] => register_1bit:REG6.Data
+DATA[7] => register_1bit:REG7.Data
+CLOCK => register_1bit:REG2.Clock
+CLOCK => register_1bit:REG1.Clock
+CLOCK => register_1bit:REG0.Clock
+CLOCK => register_1bit:REG3.Clock
+CLOCK => register_1bit:REG4.Clock
+CLOCK => register_1bit:REG5.Clock
+CLOCK => register_1bit:REG6.Clock
+CLOCK => register_1bit:REG7.Clock
+
+
+|register_32bits|register_8bits:inst1|register_1bit:REG2
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst1|register_1bit:REG1
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst1|register_1bit:REG0
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst1|register_1bit:REG3
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst1|register_1bit:REG4
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst1|register_1bit:REG5
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst1|register_1bit:REG6
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst1|register_1bit:REG7
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst2
+Q[0] <= register_1bit:REG0.Q
+Q[1] <= register_1bit:REG1.Q
+Q[2] <= register_1bit:REG2.Q
+Q[3] <= register_1bit:REG3.Q
+Q[4] <= register_1bit:REG4.Q
+Q[5] <= register_1bit:REG5.Q
+Q[6] <= register_1bit:REG6.Q
+Q[7] <= register_1bit:REG7.Q
+PARALLEL[0] => register_1bit:REG0.Parallel
+PARALLEL[1] => register_1bit:REG1.Parallel
+PARALLEL[2] => register_1bit:REG2.Parallel
+PARALLEL[3] => register_1bit:REG3.Parallel
+PARALLEL[4] => register_1bit:REG4.Parallel
+PARALLEL[5] => register_1bit:REG5.Parallel
+PARALLEL[6] => register_1bit:REG6.Parallel
+PARALLEL[7] => register_1bit:REG7.Parallel
+LOAD => register_1bit:REG2.Load
+LOAD => register_1bit:REG1.Load
+LOAD => register_1bit:REG0.Load
+LOAD => register_1bit:REG3.Load
+LOAD => register_1bit:REG4.Load
+LOAD => register_1bit:REG5.Load
+LOAD => register_1bit:REG6.Load
+LOAD => register_1bit:REG7.Load
+DATA[0] => register_1bit:REG0.Data
+DATA[1] => register_1bit:REG1.Data
+DATA[2] => register_1bit:REG2.Data
+DATA[3] => register_1bit:REG3.Data
+DATA[4] => register_1bit:REG4.Data
+DATA[5] => register_1bit:REG5.Data
+DATA[6] => register_1bit:REG6.Data
+DATA[7] => register_1bit:REG7.Data
+CLOCK => register_1bit:REG2.Clock
+CLOCK => register_1bit:REG1.Clock
+CLOCK => register_1bit:REG0.Clock
+CLOCK => register_1bit:REG3.Clock
+CLOCK => register_1bit:REG4.Clock
+CLOCK => register_1bit:REG5.Clock
+CLOCK => register_1bit:REG6.Clock
+CLOCK => register_1bit:REG7.Clock
+
+
+|register_32bits|register_8bits:inst2|register_1bit:REG2
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst2|register_1bit:REG1
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst2|register_1bit:REG0
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst2|register_1bit:REG3
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst2|register_1bit:REG4
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst2|register_1bit:REG5
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst2|register_1bit:REG6
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst2|register_1bit:REG7
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst3
+Q[0] <= register_1bit:REG0.Q
+Q[1] <= register_1bit:REG1.Q
+Q[2] <= register_1bit:REG2.Q
+Q[3] <= register_1bit:REG3.Q
+Q[4] <= register_1bit:REG4.Q
+Q[5] <= register_1bit:REG5.Q
+Q[6] <= register_1bit:REG6.Q
+Q[7] <= register_1bit:REG7.Q
+PARALLEL[0] => register_1bit:REG0.Parallel
+PARALLEL[1] => register_1bit:REG1.Parallel
+PARALLEL[2] => register_1bit:REG2.Parallel
+PARALLEL[3] => register_1bit:REG3.Parallel
+PARALLEL[4] => register_1bit:REG4.Parallel
+PARALLEL[5] => register_1bit:REG5.Parallel
+PARALLEL[6] => register_1bit:REG6.Parallel
+PARALLEL[7] => register_1bit:REG7.Parallel
+LOAD => register_1bit:REG2.Load
+LOAD => register_1bit:REG1.Load
+LOAD => register_1bit:REG0.Load
+LOAD => register_1bit:REG3.Load
+LOAD => register_1bit:REG4.Load
+LOAD => register_1bit:REG5.Load
+LOAD => register_1bit:REG6.Load
+LOAD => register_1bit:REG7.Load
+DATA[0] => register_1bit:REG0.Data
+DATA[1] => register_1bit:REG1.Data
+DATA[2] => register_1bit:REG2.Data
+DATA[3] => register_1bit:REG3.Data
+DATA[4] => register_1bit:REG4.Data
+DATA[5] => register_1bit:REG5.Data
+DATA[6] => register_1bit:REG6.Data
+DATA[7] => register_1bit:REG7.Data
+CLOCK => register_1bit:REG2.Clock
+CLOCK => register_1bit:REG1.Clock
+CLOCK => register_1bit:REG0.Clock
+CLOCK => register_1bit:REG3.Clock
+CLOCK => register_1bit:REG4.Clock
+CLOCK => register_1bit:REG5.Clock
+CLOCK => register_1bit:REG6.Clock
+CLOCK => register_1bit:REG7.Clock
+
+
+|register_32bits|register_8bits:inst3|register_1bit:REG2
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst3|register_1bit:REG1
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst3|register_1bit:REG0
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst3|register_1bit:REG3
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst3|register_1bit:REG4
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst3|register_1bit:REG5
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst3|register_1bit:REG6
+Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
+Load => NAND.IN0
+Load => NAN2.IN0
+Parallel => NOT.IN0
+Parallel => NAN2.IN1
+Clock => dff.CLK
+Data => dff.DATAIN
+
+
+|register_32bits|register_8bits:inst3|register_1bit:REG7
 Q <= dff.DB_MAX_OUTPUT_PORT_TYPE
 Load => NAND.IN0
 Load => NAN2.IN0
