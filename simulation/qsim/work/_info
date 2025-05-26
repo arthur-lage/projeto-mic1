@@ -173,39 +173,139 @@ r1
 R9
 R10
 Z55 n@u@l@a_1bit
-!i10b 1
 Z56 !s100 QP8m<6oTcc=zUK;UGIVfE0
-!s85 0
 Z57 !s108 1746621564.500000
 R12
+!i10b 1
+!s85 0
 !s101 -O0
 vULA_1bit_vlg_check_tst
-!i10b 1
-!s100 UR6KKFLLRf?W5jB9D5KG31
-IlFGb<LYLg:iHZchDeZ<iL2
-Z58 V8oaBEI2:ccFN`cKR`oh=90
+Z58 IlFGb<LYLg:iHZchDeZ<iL2
+Z59 V8oaBEI2:ccFN`cKR`oh=90
 R53
-Z59 w1746621563
+Z60 w1746621563
 R17
 R18
 L0 71
 R8
 r1
-!s85 0
 31
-Z60 !s108 1746621564.549000
-Z61 !s107 mic1.vt|
+Z61 !s108 1746621564.549000
+R20
 R21
-!s101 -O0
 R10
 Z62 n@u@l@a_1bit_vlg_check_tst
-vULA_1bit_vlg_sample_tst
+Z63 !s100 UR6KKFLLRf?W5jB9D5KG31
 !i10b 1
-Z63 !s100 UAQe18m[1m_P=9F1Bb7o70
-Z64 IoQO<RM?4hj`O>^X4oS_Z03
-Z65 VXA`bV=QfMnhZA2?ZGL8jl0
+!s85 0
+!s101 -O0
+vULA_1bit_vlg_sample_tst
+Z64 !s100 UAQe18m[1m_P=9F1Bb7o70
+Z65 IoQO<RM?4hj`O>^X4oS_Z03
+Z66 VXA`bV=QfMnhZA2?ZGL8jl0
 R53
-R59
+R60
+R17
+R18
+L0 29
+R8
+r1
+31
+R61
+R20
+R21
+R10
+Z67 n@u@l@a_1bit_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_1bit_vlg_vec_tst
+Z68 !s100 ]J[a6N<:deo2Jz861Q5zS3
+Z69 I^ad]Hgz3jMG80OkfIm8M[3
+Z70 VPjTNLXPzREjLmP<8h`CY01
+R53
+R60
+R17
+R18
+Z71 L0 195
+R8
+r1
+31
+R61
+R20
+R21
+R10
+Z72 n@u@l@a_1bit_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_32bits
+Z73 !s100 o<AnMf6MG9jcSm9?2l@B`1
+Z74 If`JoL5kzRG`SOIf:zzLAJ0
+Z75 VYOS`VcMPgNmY5<3D3Q_Bd1
+Z76 dC:\Users\Rafael\OneDrive\Documentos\CEFET\LAOCII\projeto-mic1\simulation\qsim
+Z77 w1748262906
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z78 n@u@l@a_32bits
+!i10b 1
+!s85 0
+Z79 !s108 1748262907.274000
+R12
+!s101 -O0
+vULA_32bits_vlg_check_tst
+Z80 IdXQ`hazh@47BQFgGD_IU>2
+Z81 Vaa2<mkK]LS3dJSaF:15jS2
+R76
+Z82 w1748262880
+R17
+R18
+L0 71
+R8
+r1
+31
+Z83 !s108 1748262881.494000
+R20
+R21
+R10
+Z84 n@u@l@a_32bits_vlg_check_tst
+Z85 !s100 JS<L<US<oI`SB;j<dDFMX3
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_32bits_vlg_sample_tst
+Z86 IB2^F?fYoUaK:;EPlBUk2Q1
+Z87 VPeoK_W1l7>WJHfzadEOG70
+R76
+R82
+R17
+R18
+L0 29
+R8
+r1
+31
+R83
+R20
+R21
+R10
+Z88 n@u@l@a_32bits_vlg_sample_tst
+Z89 !s100 IOAA0g[_Cl=?^F3JHi9[[3
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_32bits_vlg_vec_tst
+!i10b 1
+!s100 1d1QgYSd@HZR>]YcICVW01
+Id8l>OZUm9BK6g]NfDU1a31
+Z90 VDXCUNCWCRR;XWz=oV6@Me1
+R76
+R77
 R17
 R18
 L0 29
@@ -213,29 +313,9 @@ R8
 r1
 !s85 0
 31
-R60
-R61
+!s108 1748262907.398000
+!s107 mic1.vt|
 R21
 !s101 -O0
 R10
-Z66 n@u@l@a_1bit_vlg_sample_tst
-vULA_1bit_vlg_vec_tst
-!i10b 1
-Z67 !s100 ]J[a6N<:deo2Jz861Q5zS3
-Z68 I^ad]Hgz3jMG80OkfIm8M[3
-Z69 VPjTNLXPzREjLmP<8h`CY01
-R53
-R59
-R17
-R18
-Z70 L0 195
-R8
-r1
-!s85 0
-31
-R60
-R61
-R21
-!s101 -O0
-R10
-Z71 n@u@l@a_1bit_vlg_vec_tst
+Z91 n@u@l@a_32bits_vlg_vec_tst
