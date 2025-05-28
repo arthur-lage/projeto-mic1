@@ -1,5 +1,5 @@
 Assembler report for mic1
-Mon May 26 22:04:59 2025
+Wed May 28 11:30:21 2025
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,11 +38,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon May 26 22:04:59 2025 ;
+; Assembler Status      ; Successful - Wed May 28 11:30:21 2025 ;
 ; Revision Name         ; mic1                                  ;
-; Top-level Entity Name ; register_32bits                       ;
+; Top-level Entity Name ; register_8bits                        ;
 ; Family                ; Cyclone II                            ;
-; Device                ; EP2C5F256C6                           ;
+; Device                ; EP2C5T144C6                           ;
 +-----------------------+---------------------------------------+
 
 
@@ -93,9 +93,9 @@ applicable agreement for further details.
 +----------------+----------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                      ;
 +----------------+----------------------------------------------------------------------------------------------+
-; Device         ; EP2C5F256C6                                                                                  ;
-; JTAG usercode  ; 0x00082C1F                                                                                   ;
-; Checksum       ; 0x00082C1F                                                                                   ;
+; Device         ; EP2C5T144C6                                                                                  ;
+; JTAG usercode  ; 0x00076796                                                                                   ;
+; Checksum       ; 0x00076796                                                                                   ;
 +----------------+----------------------------------------------------------------------------------------------+
 
 
@@ -106,7 +106,7 @@ applicable agreement for further details.
 +--------------------+------------------------------------------------------------------------------------------+
 ; Device             ; EPCS4                                                                                    ;
 ; JTAG usercode      ; 0x00000000                                                                               ;
-; Checksum           ; 0x074FACAA                                                                               ;
+; Checksum           ; 0x07528727                                                                               ;
 ; Compression Ratio  ; 3                                                                                        ;
 +--------------------+------------------------------------------------------------------------------------------+
 
@@ -117,13 +117,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon May 26 22:04:58 2025
+    Info: Processing started: Wed May 28 11:30:20 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off mic1 -c mic1
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 352 megabytes
-    Info: Processing ended: Mon May 26 22:04:59 2025
+    Info: Processing ended: Wed May 28 11:30:21 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

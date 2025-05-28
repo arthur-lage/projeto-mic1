@@ -3,7 +3,7 @@ $comment
 		vcd file mic1.msim.vcd -direction
 $end
 $date
-	Mon May 26 17:43:35 2025
+	Wed May 28 11:32:37 2025
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,99 +11,330 @@ $end
 $timescale
 	1ps
 $end
-$scope module ULA_1bit_vlg_vec_tst $end
-$var reg 1 ! A $end
-$var reg 1 " B $end
-$var reg 1 # CIN $end
-$var reg 1 $ ENA $end
-$var reg 1 % ENB $end
-$var reg 1 & F0 $end
-$var reg 1 ' F1 $end
-$var reg 1 ( INVA $end
-$var wire 1 ) COUT $end
-$var wire 1 * S $end
-$var wire 1 + sampler $end
+$scope module register_8bits_vlg_vec_tst $end
+$var reg 1 ! CLOCK $end
+$var reg 8 " DATA [7:0] $end
+$var reg 1 # LOAD $end
+$var reg 8 $ PARALLEL [7:0] $end
+$var wire 1 % Q [7] $end
+$var wire 1 & Q [6] $end
+$var wire 1 ' Q [5] $end
+$var wire 1 ( Q [4] $end
+$var wire 1 ) Q [3] $end
+$var wire 1 * Q [2] $end
+$var wire 1 + Q [1] $end
+$var wire 1 , Q [0] $end
+$var wire 1 - sampler $end
 $scope module i1 $end
-$var wire 1 , gnd $end
-$var wire 1 - vcc $end
-$var wire 1 . unknown $end
-$var tri1 1 / devclrn $end
-$var tri1 1 0 devpor $end
-$var tri1 1 1 devoe $end
-$var wire 1 2 B~combout $end
-$var wire 1 3 ENB~combout $end
-$var wire 1 4 CIN~combout $end
-$var wire 1 5 INVA~combout $end
-$var wire 1 6 A~combout $end
-$var wire 1 7 ENA~combout $end
-$var wire 1 8 inst5~combout $end
-$var wire 1 9 inst|inst2~0_combout $end
-$var wire 1 : F1~combout $end
-$var wire 1 ; inst4~combout $end
-$var wire 1 < F0~combout $end
-$var wire 1 = inst15~0_combout $end
-$var wire 1 > inst15~1_combout $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 CLOCK~combout $end
+$var wire 1 5 CLOCK~clkctrl_outclk $end
+$var wire 1 6 LOAD~combout $end
+$var wire 1 7 LOAD~clkctrl_outclk $end
+$var wire 1 8 REG7|dff~1_combout $end
+$var wire 1 9 REG7|dff~3_combout $end
+$var wire 1 : REG7|dff~_emulated_regout $end
+$var wire 1 ; REG7|dff~2_combout $end
+$var wire 1 < REG6|dff~1_combout $end
+$var wire 1 = REG6|dff~3_combout $end
+$var wire 1 > REG6|dff~_emulated_regout $end
+$var wire 1 ? REG6|dff~2_combout $end
+$var wire 1 @ REG5|dff~1_combout $end
+$var wire 1 A REG5|dff~3_combout $end
+$var wire 1 B REG5|dff~_emulated_regout $end
+$var wire 1 C REG5|dff~2_combout $end
+$var wire 1 D REG4|dff~1_combout $end
+$var wire 1 E REG4|dff~3_combout $end
+$var wire 1 F REG4|dff~_emulated_regout $end
+$var wire 1 G REG4|dff~2_combout $end
+$var wire 1 H REG3|dff~1_combout $end
+$var wire 1 I REG3|dff~3_combout $end
+$var wire 1 J REG3|dff~_emulated_regout $end
+$var wire 1 K REG3|dff~2_combout $end
+$var wire 1 L REG2|dff~1_combout $end
+$var wire 1 M REG2|dff~3_combout $end
+$var wire 1 N REG2|dff~_emulated_regout $end
+$var wire 1 O REG2|dff~2_combout $end
+$var wire 1 P REG1|dff~1_combout $end
+$var wire 1 Q REG1|dff~3_combout $end
+$var wire 1 R REG1|dff~_emulated_regout $end
+$var wire 1 S REG1|dff~2_combout $end
+$var wire 1 T REG0|dff~1_combout $end
+$var wire 1 U REG0|dff~3_combout $end
+$var wire 1 V REG0|dff~_emulated_regout $end
+$var wire 1 W REG0|dff~2_combout $end
+$var wire 1 X DATA~combout [7] $end
+$var wire 1 Y DATA~combout [6] $end
+$var wire 1 Z DATA~combout [5] $end
+$var wire 1 [ DATA~combout [4] $end
+$var wire 1 \ DATA~combout [3] $end
+$var wire 1 ] DATA~combout [2] $end
+$var wire 1 ^ DATA~combout [1] $end
+$var wire 1 _ DATA~combout [0] $end
+$var wire 1 ` PARALLEL~combout [7] $end
+$var wire 1 a PARALLEL~combout [6] $end
+$var wire 1 b PARALLEL~combout [5] $end
+$var wire 1 c PARALLEL~combout [4] $end
+$var wire 1 d PARALLEL~combout [3] $end
+$var wire 1 e PARALLEL~combout [2] $end
+$var wire 1 f PARALLEL~combout [1] $end
+$var wire 1 g PARALLEL~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
 0!
-0"
+b1011010 "
 0#
-1$
-1%
-1&
-1'
-1(
-0)
-1*
+b10100101 $
+x,
 x+
-0,
-1-
-x.
+x*
+x)
+x(
+x'
+x&
+x%
+x-
+0.
 1/
-10
+x0
 11
-02
+12
 13
 04
-15
+x5
 06
-17
-18
-09
-1:
-0;
-1<
-1=
-1>
+x7
+x8
+x9
+x:
+x;
+x<
+x=
+x>
+x?
+x@
+xA
+xB
+xC
+xD
+xE
+xF
+xG
+xH
+xI
+xJ
+xK
+xL
+xM
+xN
+xO
+xP
+xQ
+xR
+xS
+xT
+xU
+xV
+xW
+0_
+1^
+0]
+1\
+1[
+0Z
+1Y
+0X
+1g
+0f
+1e
+0d
+0c
+1b
+0a
+1`
 $end
-#250000
-1"
-12
-0+
-1;
-19
+#122
+05
+07
+#218
+0:
 0>
-1)
-0*
-#500000
-0"
-02
-1+
-0;
-09
-1>
+0B
+0F
+0J
+0N
+0R
+0V
+#60000
+1!
+0-
+#60989
+14
+#61111
+15
+#62599
+x:
+xB
+xF
+xJ
+xR
+#62612
+x>
+xN
+xV
+#100000
+0!
+1-
+#100989
+04
+#101111
+05
+#210000
+1#
+0-
+#210979
+16
+#211101
+17
+#211804
+0K
+#211807
+0G
+#211808
+0S
+#212056
+1C
+#212074
+1;
+#212317
+1T
+#212320
+18
+#212321
+1@
+0D
+0H
+#212441
+0<
+#212442
+1L
+#212446
+0P
+#212576
+1W
+#212713
+1U
+#212727
+1I
+#212729
+1E
+#212730
+19
+#212732
+1A
+#212847
+0?
+#212850
+1O
+1Q
+#212856
+1=
+#212860
+1M
+#212925
+0>
+0N
+0V
+#212927
+0:
+0B
+0F
+0J
+0R
+#215190
+0+
+#215256
 0)
+#215419
+1'
+#215436
+0(
+#215500
+1%
+#215904
 1*
-#750000
-1"
-12
-0+
-1;
-19
-0>
-1)
+#215962
+1,
+#216183
+0&
+#250000
+0#
+1-
+#250979
+06
+#251101
+07
+#450000
+1!
+0-
+#450989
+14
+#451111
+15
+#452599
+1:
+1B
+1F
+1J
+1R
+#452612
+1>
+1N
+1V
+#453185
+1S
+#453187
+1K
+#453188
+1G
+#453190
+0;
+0C
+#453255
+1?
+#453369
+0O
+#453535
+0W
+#456423
 0*
+#456553
+0'
+#456567
+1+
+#456591
+1&
+#456616
+0%
+#456639
+1)
+#456817
+1(
+#456921
+0,
+#470000
+0!
+1-
+#470989
+04
+#471111
+05
 #1000000
