@@ -1,6 +1,6 @@
 EDA Netlist Writer report for mic1
-Wed May 28 11:32:36 2025
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Wed Jun 04 12:06:49 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed May 28 11:32:36 2025 ;
+; EDA Netlist Writer Status ; Successful - Wed Jun 04 12:06:49 2025 ;
 ; Revision Name             ; mic1                                  ;
-; Top-level Entity Name     ; register_8bits                        ;
+; Top-level Entity Name     ; shifter                               ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -82,9 +82,9 @@ applicable agreement for further details.
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit EDA Netlist Writer
+Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed May 28 11:32:35 2025
+    Info: Processing started: Wed Jun 04 12:06:48 2025
 Info: Command: quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog mic1 -c mic1
 Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
 Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
@@ -157,9 +157,9 @@ Warning (20013): Ignored assignments for entity "ULA_1bit" -- entity does not ex
     Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity ULA_1bit -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity ULA_1bit -section_id Top was ignored
 Info (204026): Generated files "mic1.vo", "mic1_fast.vo", "mic1_v.sdo" and "mic1_v_fast.sdo" in directory "C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 70 warnings
-    Info: Peak virtual memory: 333 megabytes
-    Info: Processing ended: Wed May 28 11:32:36 2025
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 70 warnings
+    Info: Peak virtual memory: 4521 megabytes
+    Info: Processing ended: Wed Jun 04 12:06:49 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
