@@ -1473,21 +1473,6 @@ applicable agreement for further details.
 	(pt 224 136)
 )
 (connector
-	(pt 880 376)
-	(pt 880 1608)
-)
-(connector
-	(pt 856 376)
-	(pt 880 376)
-	(bus)
-)
-(connector
-	(text "O[7..0]" (rect 894 360 928 372)(font "Arial" ))
-	(pt 880 376)
-	(pt 912 376)
-	(bus)
-)
-(connector
 	(pt 112 -16)
 	(pt 112 72)
 )
@@ -1618,6 +1603,26 @@ applicable agreement for further details.
 	(pt 432 1608)
 	(pt 880 1608)
 )
+(connector
+	(pt 880 384)
+	(pt 880 1608)
+)
+(connector
+	(pt 880 376)
+	(pt 880 384)
+	(bus)
+)
+(connector
+	(pt 856 376)
+	(pt 880 376)
+	(bus)
+)
+(connector
+	(text "O[7..0]" (rect 894 360 928 372)(font "Arial" ))
+	(pt 880 376)
+	(pt 912 376)
+	(bus)
+)
 (junction (pt 72 -16))
 (junction (pt 40 -16))
 (junction (pt 16 -16))
@@ -1671,6 +1676,6 @@ applicable agreement for further details.
 (junction (pt 808 376))
 (junction (pt 832 376))
 (junction (pt 856 376))
-(junction (pt 880 376))
 (junction (pt 248 1792))
 (junction (pt 208 1792))
+(junction (pt 880 376))

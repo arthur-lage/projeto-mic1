@@ -1,6 +1,6 @@
 Analysis & Synthesis report for mic1
-Wed Jun 04 11:58:37 2025
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Jul 18 12:55:40 2025
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 04 11:58:37 2025           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 18 12:55:40 2025           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mic1                                            ;
-; Top-level Entity Name              ; shifter                                         ;
+; Top-level Entity Name              ; ULA_1bit                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 55                                              ;
-;     Total combinational functions  ; 55                                              ;
+; Total logic elements               ; 5                                               ;
+;     Total combinational functions  ; 5                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 66                                              ;
+; Total pins                         ; 10                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; shifter            ; mic1               ;
+; Top-level entity name                                                      ; ULA_1bit           ; mic1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -153,16 +153,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
-; decoder_2x4.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/decoder_2x4.bdf ;         ;
-; SRA1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/SRA1.bdf        ;         ;
-; SLL8.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/SLL8.bdf        ;         ;
-; shifter.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/shifter.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; full_adder_1bit.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/rafae/OneDrive/Documentos/CEFET/projeto-mic1/full_adder_1bit.bdf ;         ;
+; decoder_2x4.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/rafae/OneDrive/Documentos/CEFET/projeto-mic1/decoder_2x4.bdf     ;         ;
+; ULA_1bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/rafae/OneDrive/Documentos/CEFET/projeto-mic1/ULA_1bit.bdf        ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -170,38 +169,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 55    ;
+; Estimated Total logic elements              ; 5     ;
 ;                                             ;       ;
-; Total combinational functions               ; 55    ;
+; Total combinational functions               ; 5     ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 55    ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
+;     -- 4 input functions                    ; 2     ;
+;     -- 3 input functions                    ; 2     ;
+;     -- <=2 input functions                  ; 1     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 55    ;
+;     -- normal mode                          ; 5     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 66    ;
+; I/O pins                                    ; 10    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; SLL8  ;
-; Maximum fan-out                             ; 55    ;
-; Total fan-out                               ; 252   ;
-; Average fan-out                             ; 2.08  ;
+; Maximum fan-out node                        ; inst5 ;
+; Maximum fan-out                             ; 2     ;
+; Total fan-out                               ; 18    ;
+; Average fan-out                             ; 1.20  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |shifter                   ; 55 (55)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 66   ; 0            ; |shifter            ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
+; |ULA_1bit                  ; 5 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |ULA_1bit                      ; work         ;
+;    |full_adder_1bit:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_1bit|full_adder_1bit:inst ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -233,11 +233,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jun 04 11:58:35 2025
+    Info: Processing started: Fri Jul 18 12:55:39 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mic1 -c mic1
-Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
@@ -257,10 +257,10 @@ Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for no
 Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
 Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
 Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
@@ -280,10 +280,10 @@ Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for no
 Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
 Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
 Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
@@ -303,10 +303,10 @@ Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for no
 Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
 Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
 Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
@@ -326,9 +326,9 @@ Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for no
 Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
 Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder_1bit.bdf
     Info (12023): Found entity 1: full_adder_1bit
@@ -352,45 +352,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file sll8.bd
     Info (12023): Found entity 1: SLL8
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.bdf
     Info (12023): Found entity 1: shifter
-Info (12127): Elaborating entity "shifter" for the top level hierarchy
-Info (12128): Elaborating entity "SRA1" for hierarchy "SRA1:shifter_right_arithmetic_1bit"
-Info (12128): Elaborating entity "decoder_2x4" for hierarchy "decoder_2x4:inst"
-Info (12128): Elaborating entity "SLL8" for hierarchy "SLL8:shifter_left_logic_8bits"
-Warning (275002): No superset bus at connection
-Warning (20013): Ignored assignments for entity "ULA_1bit" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity ULA_1bit -section_id Top was ignored
+Info (12127): Elaborating entity "ULA_1bit" for the top level hierarchy
+Info (12128): Elaborating entity "full_adder_1bit" for hierarchy "full_adder_1bit:inst"
+Info (12128): Elaborating entity "decoder_2x4" for hierarchy "decoder_2x4:inst1"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 121 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 34 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 55 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 118 warnings
-    Info: Peak virtual memory: 4586 megabytes
-    Info: Processing ended: Wed Jun 04 11:58:37 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 5 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 93 warnings
+    Info: Peak virtual memory: 372 megabytes
+    Info: Processing ended: Fri Jul 18 12:55:40 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

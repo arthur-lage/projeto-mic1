@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 320 208 488 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "I0" (rect 5 0 15 12)(font "Arial" ))
+	(text "I1" (rect 5 0 15 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 320 320 488 336)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "I1" (rect 5 0 15 12)(font "Arial" ))
+	(text "I0" (rect 5 0 15 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))

@@ -592,19 +592,19 @@ applicable agreement for further details.
 (symbol
 	(rect 448 512 544 640)
 	(text "decoder_2x4" (rect 5 0 80 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 112 31 124)(font "Arial" ))
+	(text "inst1" (rect 8 112 31 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "I0" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "I0" (rect 21 27 30 41)(font "Arial" (font_size 8)))
+		(text "I1" (rect 0 0 9 14)(font "Arial" (font_size 8)))
+		(text "I1" (rect 21 27 30 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "I1" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "I1" (rect 21 43 30 57)(font "Arial" (font_size 8)))
+		(text "I0" (rect 0 0 9 14)(font "Arial" (font_size 8)))
+		(text "I0" (rect 21 43 30 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port

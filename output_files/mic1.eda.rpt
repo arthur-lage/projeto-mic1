@@ -1,6 +1,6 @@
 EDA Netlist Writer report for mic1
-Wed Jun 04 12:06:49 2025
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Jul 18 12:58:16 2025
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Jun 04 12:06:49 2025 ;
+; EDA Netlist Writer Status ; Successful - Fri Jul 18 12:58:16 2025 ;
 ; Revision Name             ; mic1                                  ;
-; Top-level Entity Name     ; shifter                               ;
+; Top-level Entity Name     ; ULA_1bit                              ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -66,27 +66,27 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                        ;
-+---------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                   ;
-+---------------------------------------------------------------------------------------------------+
-; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/simulation/modelsim/mic1.vo         ;
-; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/simulation/modelsim/mic1_fast.vo    ;
-; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/simulation/modelsim/mic1_v.sdo      ;
-; C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/simulation/modelsim/mic1_v_fast.sdo ;
-+---------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                ;
++-------------------------------------------------------------------------------------------+
+; Generated Files                                                                           ;
++-------------------------------------------------------------------------------------------+
+; C:/Users/rafae/OneDrive/Documentos/CEFET/projeto-mic1/simulation/modelsim/mic1.vo         ;
+; C:/Users/rafae/OneDrive/Documentos/CEFET/projeto-mic1/simulation/modelsim/mic1_fast.vo    ;
+; C:/Users/rafae/OneDrive/Documentos/CEFET/projeto-mic1/simulation/modelsim/mic1_v.sdo      ;
+; C:/Users/rafae/OneDrive/Documentos/CEFET/projeto-mic1/simulation/modelsim/mic1_v_fast.sdo ;
++-------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit EDA Netlist Writer
+Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jun 04 12:06:48 2025
+    Info: Processing started: Fri Jul 18 12:58:15 2025
 Info: Command: quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog mic1 -c mic1
-Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
@@ -106,10 +106,10 @@ Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for no
 Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
 Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
 Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
@@ -129,38 +129,14 @@ Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for no
 Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
 Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
 Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
-Warning (20013): Ignored assignments for entity "ULA_1bit" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity ULA_1bit -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity ULA_1bit -section_id Top was ignored
-Info (204026): Generated files "mic1.vo", "mic1_fast.vo", "mic1_v.sdo" and "mic1_v_fast.sdo" in directory "C:/Users/Rafael/OneDrive/Documentos/CEFET/LAOCII/projeto-mic1/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 70 warnings
-    Info: Peak virtual memory: 4521 megabytes
-    Info: Processing ended: Wed Jun 04 12:06:49 2025
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Info (204026): Generated files "mic1.vo", "mic1_fast.vo", "mic1_v.sdo" and "mic1_v_fast.sdo" in directory "C:/Users/rafae/OneDrive/Documentos/CEFET/projeto-mic1/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 333 megabytes
+    Info: Processing ended: Fri Jul 18 12:58:16 2025
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
