@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 256 168 424 184)
+	(rect 160 88 328 104)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "INPUT[31..0]" (rect 5 0 70 12)(font "Arial" ))
+	(text "IN[31..0]" (rect 5 0 49 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 840 168 1016 184)
+	(rect 272 288 448 304)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "OUTPUT[31..0]" (rect 90 0 165 12)(font "Arial" ))
+	(text "OUT[31..0]" (rect 90 0 144 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -52,7 +52,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 512 160 560 192)
+	(rect 312 152 360 184)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 21 20 33)(font "Arial" ))
 	(port
@@ -76,7 +76,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 512 200 560 232)
+	(rect 312 208 360 240)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst1" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -100,45 +100,29 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 424 176)
-	(pt 464 176)
+	(pt 328 96)
+	(pt 416 96)
 	(bus)
 )
 (connector
-	(text "INPUT[31..1]" (rect 432 160 496 172)(font "Arial" ))
-	(pt 464 176)
-	(pt 512 176)
+	(text "OUT[30..0]" (rect 368 152 422 164)(font "Arial" ))
+	(pt 360 168)
+	(pt 416 168)
 	(bus)
 )
 (connector
-	(text "INPUT[31]" (rect 448 156 460 207)(font "Arial" )(vertical))
-	(pt 464 176)
-	(pt 464 216)
-)
-(connector
-	(pt 512 216)
-	(pt 464 216)
-)
-(connector
-	(text "OUTPUT[31]" (rect 568 200 630 212)(font "Arial" ))
-	(pt 560 216)
-	(pt 712 216)
-)
-(connector
-	(pt 712 176)
-	(pt 712 216)
-)
-(connector
-	(text "OUTPUT[30..0]" (rect 568 160 643 172)(font "Arial" ))
-	(pt 560 176)
-	(pt 712 176)
+	(text "IN[31..1]" (rect 264 152 307 164)(font "Arial" ))
+	(pt 312 168)
+	(pt 256 168)
 	(bus)
 )
 (connector
-	(text "OUTPUT[31..0]" (rect 778 160 853 172)(font "Arial" ))
-	(pt 712 176)
-	(pt 840 176)
-	(bus)
+	(text "OUT[31]" (rect 368 208 409 220)(font "Arial" ))
+	(pt 360 224)
+	(pt 424 224)
 )
-(junction (pt 464 176))
-(junction (pt 712 176))
+(connector
+	(text "IN[31]" (rect 264 208 294 220)(font "Arial" ))
+	(pt 312 224)
+	(pt 256 224)
+)
